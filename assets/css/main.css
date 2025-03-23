@@ -1106,6 +1106,61 @@ section,
     flex-wrap: wrap;
   }
 }
+/* New Media Query for 334px and below */
+@media (max-width: 334px) {
+  .hero {
+    padding: 10px 0; /* Reduce padding further */
+    min-height: 70vh; /* Shorter height for tiny screens */
+  }
+
+  .swiper3 .container {
+    top: 10%; /* Move content higher to avoid clipping */
+    transform: translate(-50%, 0); /* Remove vertical centering */
+    padding: 0 5px; /* Tighter padding */
+  }
+
+  .hero .welcome h2 {
+    font-size: clamp(16px, 5vw, 24px); /* Smaller max size */
+    line-height: 1.2; /* Prevent overlap */
+  }
+
+  .hero .welcome p {
+    font-size: clamp(12px, 3vw, 16px);
+  }
+
+  .hero .content .why-box {
+    padding: 10px;
+  }
+
+  .hero .content .why-box h3 {
+    font-size: clamp(16px, 4vw, 20px);
+  }
+
+  .hero .content .why-box p {
+    font-size: 12px;
+  }
+
+  .hero .content .why-box .more-btn {
+    padding: 3px 10px; /* Smaller button */
+    font-size: 12px; /* Smaller text */
+  }
+
+  .hero .content .why-box .more-btn i {
+    font-size: 10px; /* Smaller icon */
+  }
+
+  .swiper3 .swiper-button-next,
+  .swiper3 .swiper-button-prev {
+    width: 30px; /* Smaller buttons */
+    height: 30px;
+    font-size: 14px; /* Adjust arrow size if needed */
+  }
+
+  .swiper3 .swiper-button-next:after,
+  .swiper3 .swiper-button-prev:after {
+    font-size: 14px; /* Smaller arrow icon */
+  }
+}
 
 /*--------------------------------------------------------------
 # About Section
