@@ -1,0 +1,88 @@
+{
+    "services": [
+        {
+            "id": "accounting",
+            "image": "assets/images/software-implementation-vemax-consultants (13).jpg",
+            "title": "Accounting Solutions",
+            "description": "We assist businesses in streamlining their financial processes using tools like QuickBooks and Excel.",
+            "additionalInfo": [
+                "Software Implementation: Guidance on selecting and setting up the right accounting software.",
+                "Financial Reporting: Preparation of accurate financial statements.",
+                "System Training: Training your staff to use accounting tools effectively."
+            ],
+            "whatsapp": "https://wa.me/254703951608",
+            
+            "link": "index.html#services"
+        },
+        {
+            "id": "payroll",
+            "image": "assets/images/payroll-vemax-consultants (10).jpg",
+            "title": "Payroll Management",
+            "description": "We ensure precise salary processing, statutory deductions, and labor law compliance.",
+            "additionalInfo": [
+                "Salary Structuring: Designing competitive and compliant salary packages.",
+                "Statutory Compliance: Managing PAYE, NHIF, and NSSF deductions.",
+                "Payroll Reporting: Generating detailed payroll reports."
+            ],
+            "whatsapp": "https://wa.me/254703951608",
+            
+            "link": "index.html#services"
+        },
+        {
+            "id": "bookkeeping",
+            "image": "assets/images/book-keeping2-vemax-consultants (5).jpg",
+            "title": "Bookkeeping",
+            "description": "Our day-to-day online bookkeeping services provide real-time financial monitoring, ensuring clarity and aiding in strategic planning.",
+            "additionalInfo": [
+                "Transaction Recording: Accurate logging of all financial transactions.",
+                "Reconciliation: Regular matching of accounts to identify and rectify discrepancies.",
+                "Expense Tracking: Monitoring expenses to manage budgets effectively."
+            ],
+            "whatsapp": "https://wa.me/254703951608",
+           
+            "link": "index.html#services"
+        },
+        {
+            "id": "tax",
+            "image": "assets/images/tax-advisory-vemax-consultants (21).jpg",
+            "title": "Tax Advisory",
+            "description": "We assist you in navigating tax regulations, ensuring compliance while optimizing tax planning strategies to legally minimize liabilities.",
+            "additionalInfo": [
+                "Tax Planning: Developing strategies to reduce tax burdens within legal frameworks.",
+                "Compliance Checks: Regular reviews to ensure adherence to tax laws.",
+                "Filing Services: Timely preparation and submission of tax returns."
+            ],
+            "whatsapp": "https://wa.me/254703951608",
+            
+            "link": "index.html#services"
+        },
+        {
+            "id": "registration",
+            "image": "assets/images/ecitizen-vemax-consultants (1).png",
+            "title": "Business Registration",
+            "description": "We offer seamless services for registering new businesses or facilitating name changes, ensuring all legal requirements are met efficiently.",
+            "additionalInfo": [
+                "Entity Selection: Advising on the best business structure (e.g., sole proprietorship, limited company)",
+                "Documentation: Assisting in the preparation and submission of necessary documents.",
+                "Regulatory Liaison: Coordinating with government bodies to expedite the registration process"
+            ],
+            "whatsapp": "https://wa.me/254703951608",
+            
+            "link": "index.html#services"
+        },
+        {
+            "id": "training",
+            "image": "assets/images/training2-vemax-consultants (2).jpg",
+            "title": "Training",
+            "description": "We provide tailored training sessions on accounting systems and financial tools, empowering individuals and organizations to manage their finances effectively.",
+            "additionalInfo": [
+                "Customized Programs: Training tailored to your specific industry and needs.",
+                "Hands-on Workshops: Practical sessions to ensure proficiency in accounting tools.",
+                "Continuous Support: Ongoing assistance post-training to address any queries."
+            ],
+            "whatsapp": "https://wa.me/254703951608",
+           
+            "link": "index.html#services"
+        }
+    ]
+}

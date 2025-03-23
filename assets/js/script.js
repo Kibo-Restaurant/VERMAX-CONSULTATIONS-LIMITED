@@ -37,7 +37,10 @@ const swiper = new Swiper('.swiper', {
     // },
   });
 
-  /* Services swiper2*/
+  /************* ***********************
+   * Services swiper2
+   * 
+   * *********************************************/
   const swiper2 = new Swiper('.swiper2', {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -63,3 +66,55 @@ const swiper = new Swiper('.swiper', {
       loop:true,
   },
   });
+
+
+
+  // /****************
+  //  * SWIPER 3 
+  // *************************************** */
+  const swiper3 = new Swiper(".mySwiper3", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ["-20%", 0, -1],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+     direction: 'horizontal',
+  //    loop: true,
+     autoplay: {
+      delay: 3000, // 3 seconds
+      disableOnInteraction: false, // Keeps autoplay running after user interaction
+  },
+  speed: 2000, // Transition speed in milliseconds (1 second)
+    
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+      on: {
+      slideChange: function () {
+      // Check if at the last slide
+      if (this.activeIndex === this.slides.length - 1) {
+          this.autoplay.stop(); // Pause briefly
+          setTimeout(() => {
+          this.autoplay.reverseDirection = true; // Reverse direction
+          this.autoplay.start(); // Resume
+          }, 100); // Small delay to avoid glitch
+      }
+      // Check if at the first slide
+      else if (this.activeIndex === 0) {
+          this.autoplay.stop(); // Pause briefly
+          setTimeout(() => {
+          this.autoplay.reverseDirection = false; // Forward direction
+          this.autoplay.start(); // Resume
+          }, 100); // Small delay to avoid glitch
+      }
+      },
+  },
+  });
+  

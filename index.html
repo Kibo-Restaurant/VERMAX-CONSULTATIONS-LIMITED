@@ -17,13 +17,17 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <!--Icons-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+ 
+  <!--Bootstrap-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+   <!-- swiper.js-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -35,12 +39,12 @@
 
 <body class="index-page">
 
-  <header id="header" class="header sticky-top">
+  <header id="header" class="header fixed">
 
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@vermax.com">info@vermax.com</a></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@vermax.com">info@vermaxconsultants.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+254 703 951 608</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
@@ -69,7 +73,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Accountants</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
                 <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -85,7 +89,7 @@
                 <li><a href="#">Dropdown 3</a></li>
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
-            </li>
+            </li> -->
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -102,67 +106,64 @@
   <main class="main">
 
     <!-- Hero Section -->
+   
+
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/images/consult.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative">
-
-        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2 class="d-flex">VERMAX CONSULTATIONS</h2>
-          <p>We provide expert accounting solutions to help businesses grow.</p>
-        </div><!-- End Welcome -->
-
-        <div class="content row gy-4">
-          <div class="col-lg-6 d-flex align-items-stretch">
-            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-              <h3>What Makes Us Stand Out?</h3>
-              <p>
-                  At Vermax Consultations, we provide reliable accounting, bookkeeping, and tax solutions tailored to your business needs. 
-                  Our expertise ensures compliance, financial clarity, and efficient management, so you can focus on growth.
-              </p>
-              <div class="text-center">
-                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-              </div>
+      <!-- <img class="" src="assets/images/consult.jpg" alt="" data-aos="fade-in"> -->
+      <div class="swiper3 mySwiper3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1
+            <img src="assets/images/calculating-vemax-consultants.jpg">
+            <div class="swiper-overlay"></div>
             </div>
-          </div><!-- End Why Box -->
-
-          <!-- <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="d-flex flex-column justify-content-center">
-              <div class="row gy-4">
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                    <i class="bi bi-clipboard-data"></i>
-                    <h4>Corporis voluptates officia eiusmod</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                  </div>
-                </div>
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                    <i class="bi bi-gem"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                  </div>
-                </div>
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                    <i class="bi bi-inboxes"></i>
-                    <h4>Labore consequatur incidid dolore</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                  </div>
-                </div>
-
-              </div>
+            <div class="swiper-slide">Slide 2
+            <img src="assets/images/software-implementation-vemax-consultants (13).jpg">
+            <div class="swiper-overlay"></div>
             </div>
-          </div> -->
+            <!-- <div class="swiper-slide">Slide 3
+            <img src="assets/images/bookkeeping-vemax-consultants (27).jpg">
+            <div class="swiper-overlay"></div>
+            </div> -->
+            
         </div>
 
-      </div>
+
+        <div class="container">
+
+          <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+            <h2 class="d-flex animated go-up">VERMAX CONSULTANCE</h2>
+            <p class="animated go-up scrolled">We provide expert accounting solutions to help businesses grow.</p>
+          </div><!-- End Welcome -->
+  
+          <div class="content row gy-4 animated from-right">
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+                <h3>What Makes Us Stand Out?</h3>
+                <p>
+                    At Vermax Consultations, we provide reliable accounting, bookkeeping, and tax solutions tailored to your business needs. 
+                    Our expertise ensures compliance, financial clarity, and efficient management, so you can focus on growth.
+                </p>
+                <div class="text-center ">
+                  <a href="#about" class="more-btn animated bounce"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End Why Box -->
+  
+          </div>
+  
+        </div>
+        <!-- Navigation buttons (optional) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
+
+     </div>
+
+      
 
     </section><!-- /Hero Section -->
+    
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -179,17 +180,23 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="assets/images/income-statement.jpg">
+                  <img src="assets/images/our-vision-training3-vemax-consultants (11).jpg">
                   
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/images/helping-clients.jpg">
+                  <img src="assets/images/mission-vemax-consultants (14).jpg">
                  
                 </div>
                 <div class="swiper-slide"> 
-                  <img src="assets/images/pexels-kindelmedia-7054415.jpg">
+                  <img src="assets/images/values-vemax-consultants (17).jpg">
                   
                 </div>
+                <div class="swiper-slide"> 
+                  <img src="assets/images/sectors-vemax-consultants (24).jpg">
+                  
+                </div>
+                  
+
                
               </div>
               <!-- If we need pagination -->
@@ -206,7 +213,7 @@
           </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>About Us</h3>
+            <h3 class="animated bounce">About Us</h3>
             <p>
               Vermax Consultation Limited is a growing firm dedicated to empowering SMEs with financial expertise. Founded by <strong>Maxwell Ojwang’</strong>, the firm was established to address the lack of best financial practices among businesses in Kenya. With deep knowledge in <strong>accounting and finance</strong>, Vermax helps businesses streamline operations and achieve sustainable growth.
             </p>
@@ -301,76 +308,103 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
+        <h2 class="animated bounce">Services</h2>
         <p>Smart financial solutions to keep your business compliant, efficient, and growing.</p>  
       </div><!-- End Section Title -->
 
        
       <!-- Swiper -->
   <div class="swiper2 mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="service-item position-relative">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide animated rotate ">
+        <div class="service-item position-relative ">
           <div class="icon">
             <i class="fas fa-coins"></i>
           </div>
-          <a href="#" class="stretched-link">
+          
             <h3>Accounting Solutions</h3>
-          </a>
-          <p>We help businesses streamline their finances using QuickBooks, advanced Excel, and other online accounting tools.</p>
-          <a href="#" class="stretched-link"></a>
+          
+          <!-- <p>We help businesses streamline their finances using QuickBooks, advanced Excel, and other online accounting tools.</p> --> 
         </div>
+        <a href="assets/images/software-implementation-vemax-consultants (13).jpg" class="glightbox dynamic-lightbox" data-id="accounting" >
+          <img src="assets/images/software-implementation-vemax-consultants (13).jpg" class="img-fluid" alt="accounting">
+          <span class="learn-more  animated bounce"><button class="btn btn-primary">Learn More</button></span>
+       </a>
       </div>
-      <div class="swiper-slide"><div class="service-item position-relative">
-        <div class="icon">
-          <i class="fas fa-credit-card"></i>
+      <div class="swiper-slide  animated rotate">
+        <div class="service-item position-relative ">
+            <div class="icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            
+              <h3>Payroll Management</h3>
+           
+            
+            <!-- <a href="#" class="stretched-link"></a> -->
         </div>
-        <a href="#" class="stretched-link">
-          <h3>Payroll Management</h3>
-        </a>
-        <p> Ensure accurate salary processing, statutory deductions, and compliance with labor laws.</p>
-        <a href="#" class="stretched-link"></a>
-      </div></div>
-      <div class="swiper-slide"><div class="service-item position-relative">
+        <a href="assets/images/payroll-vemax-consultants (10).jpg" class="glightbox dynamic-lightbox" data-id="payroll" >
+          <img src="assets/images/payroll-vemax-consultants (10).jpg" class="img-fluid" alt="payroll">
+          <span class="learn-more  animated bounce"><button class="btn btn-primary">Learn More</button></span>
+      </a>
+     </div><!--end of slide-->
+      <div class="swiper-slide animated rotate">
+        <div class="service-item position-relative ">
         <div class="icon">
           <i class="fas fa-book"></i>
         </div>
-        <a href="#" class="stretched-link">
+        <!-- <a href="#" class="stretched-link"> -->
           <h3>Bookkeeping</h3>
         </a>
-        <p>Day-to-day online bookkeeping for real-time monitoring and financial clarity.</p>
-        <a href="#" class="stretched-link"></a>
-      </div></div>
-      <div class="swiper-slide"><div class="service-item position-relative">
+        
+        <!-- <a href="#" class="stretched-link"></a> -->
+      </div>
+      <a href="assets/images/book-keeping2-vemax-consultants (5).jpg" class="glightbox dynamic-lightbox" data-id="bookkeeping" >
+        <img src="assets/images/book-keeping2-vemax-consultants (5).jpg" class="img-fluid" alt="bookkeeping">
+        <span class="learn-more  animated bounce"><button class="btn btn-primary">Learn More</button></span>
+    </a>
+    </div>
+      <div class="swiper-slide animated rotate"><div class="service-item position-relative">
         <div class="icon">
           <i class="fas fa-hand-holding-usd"></i>
         </div>
-        <a href="#" class="stretched-link">
+        
           <h3>Tax Advisory </h3>
         </a>
-        <p>Stay compliant with tax regulations while optimizing tax planning strategies.</p>
-        <a href="#" class="stretched-link"></a>
-      </div></div>
-      <div class="swiper-slide"><div class="service-item position-relative">
+        
+      </div>
+      <a href="assets/images/tax-advisory-vemax-consultants (21).jpg" class="glightbox dynamic-lightbox" data-id="tax" >
+        <img src="assets/images/tax-advisory-vemax-consultants (21).jpg" class="img-fluid" alt="tax">
+        <span class="learn-more  animated bounce"><button class="btn btn-primary">Learn More</button></span>
+    </a>
+    </div>
+      <div class="swiper-slide animated rotate"><div class="service-item position-relative">
         <div class="icon">
           <i class="fas fa-id-badge"></i>
         </div>
-        <a href="#" class="stretched-link">
+        <!-- <a href="#" class="stretched-link"> -->
           <h3>Business Registration </h3>
         </a>
-        <p>Hassle-free registration of new businesses and name changes.</p>
-        <a href="#" class="stretched-link"></a>
-      </div></div>
-      <div class="swiper-slide"><div class="service-item position-relative">
+        
+      </div>
+      <a href="assets/images/ecitizen-vemax-consultants (1).png" class="glightbox dynamic-lightbox" data-id="registration" >
+        <img src="assets/images/ecitizen-vemax-consultants (1).png" class="img-fluid" alt="registration">
+        <span class="learn-more  animated bounce"><button class="btn btn-primary">Learn More</button></span>
+    </a> 
+    </div>
+      <div class="swiper-slide animated rotate"><div class="service-item position-relative">
         <div class="icon">
           <i class="fas fa-users"></i> 
         </div>
-        <a href="#" class="stretched-link">
+        <!-- <a href="#" class="stretched-link"> -->
           <h3>Training </h3>
         </a>
-        <p>Personalized and corporate training on accounting systems and financial tools.</p>
-        <a href="#" class="stretched-link"></a>
-      </div></div>
+        
+      </div>
+      <a href="assets/images/training2-vemax-consultants (2).jpg" class="glightbox dynamic-lightbox" data-id="training" >
+        <img src="assets/images/training2-vemax-consultants (2).jpg" class="img-fluid" alt="training">
+        <span class="learn-more  animated bounce"><button class="btn btn-primary">Learn More</button></span>
+    </a>
+    </div>
       
       
     </div>
@@ -378,13 +412,22 @@
   </div>
     </section><!-- /Services Section -->
 
+    <!-- /Services popups -->
+    <div id="custom-modal" class="modal">
+      <div class="modal-content">
+          <span class="modal-close">×</span>
+          <div class="modal-body"></div>
+      </div>
+  </div>
+  <!-- /Services popups -->
+
     
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2 class="animated bounce">Contact</h2>
         <p>Have questions or need expert financial guidance? Let’s talk! Reach out today and take your business to the next level.</p> 
       </div><!-- End Section Title -->
 
@@ -401,7 +444,7 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Location</h3>
+                <h3 class=" animated swing">Location</h3>
                 <p>Mtwapa, Kenya</p>
               </div>
             </div><!-- End Info Item -->
@@ -409,7 +452,7 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
+                <h3 class=" animated swing">Call Us</h3>
                 <p>+254 703 951 608</p>
               </div>
             </div><!-- End Info Item -->
@@ -417,8 +460,8 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>info@vermax.com</p>
+                <h3 class=" animated swing">Email Us</h3>
+                <p>info@vermaxconsultants.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -449,7 +492,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button class="animated bounce" type="submit">Send Message</button>
                 </div>
 
               </div>
@@ -476,7 +519,7 @@
             <p>Mtwapa</p>
             <p>Kenya</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+254 703 951 608</span></p>
-            <p><strong>Email:</strong> <span>info@vermax.com</span></p>
+            <p><strong>Email:</strong> <span>info@vermaxconsultants.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -489,9 +532,9 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#services">Services</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
@@ -500,34 +543,34 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>  
           <ul>  
-            <li><a href="#">Accounting Solutions</a></li>  
-            <li><a href="#">Payroll Management</a></li>  
-            <li><a href="#">Bookkeeping Services</a></li>  
-            <li><a href="#">Tax Advisory & Compliance</a></li>  
-            <li><a href="#">Business Registration</a></li>  
-            <li><a href="#">Financial Training & Capacity Building</a></li>  
+            <li><a href="" class="glightbox dynamic-lightbox" data-id="accounting">Accounting Solutions</a></li>  
+            <li><a href="#" class="glightbox dynamic-lightbox" data-id="payroll">Payroll Management</a></li>  
+            <li><a href="#" class="glightbox dynamic-lightbox" data-id="bookkeeping">Bookkeeping Services</a></li>  
+            <li><a href="#" class="glightbox dynamic-lightbox" data-id="tax">Tax Advisory & Compliance</a></li>  
+            <li><a href="#" class="glightbox dynamic-lightbox" data-id="registration">Business Registration</a></li>  
+            <li><a href="#" class="glightbox dynamic-lightbox" data-id="training">Financial Training & Capacity Building</a></li>  
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
+          <h4>Government & HR Links</h4>
           <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
+            <li><a href="https://www.kra.go.ke/" target="_blank">Kenya Revenue Authority (KRA)</a></li>
+            <li><a href="https://www.nssf.or.ke/" target="_blank">National Social Security Fund (NSSF)</a></li>
+            <li><a href="https://sha.go.ke/" target="_blank">Social Health Authority (SHA)</a></li>
+            <li><a href="https://www.eCitizen.go.ke/" target="_blank">eCitizen Portal</a></li>
+            <li><a href="https://labour.go.ke/" target="_blank">Ministry of Labour</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
+          <h4>Financial & Taxation Blogs</h4>
           <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li><a href="#">How to File KRA Returns</a></li>
+            <li><a href="#">Choosing the Right Accounting Firm</a></li>
+            <li><a href="#">Payroll Compliance in Kenya</a></li>
+            <li><a href="#">Tax Deductible Expenses for SMEs</a></li>
+            <li><a href="#">Latest Tax Updates in Kenya</a></li>
           </ul>
         </div>
 
@@ -553,18 +596,17 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
-
+  <script src="assets/js/service-pop-up.js"></script>
+  <script src="assets/js/animation-observor.js"></script>
+  
+  
 
 </body>
 
