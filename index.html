@@ -45,7 +45,7 @@
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@vermax.com">info@vermaxconsultants.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+254 703 951 608</span></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span><a href="tel:+254 703 951 608">+254 703 951 608</a></span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -450,7 +450,7 @@
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
+              <a href="tel:+254 703 951 608"><i class="bi bi-telephone flex-shrink-0"></i></a>
               <div>
                 <h3 class=" animated swing">Call Us</h3>
                 <p>+254 703 951 608</p>
@@ -458,7 +458,7 @@
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
+              <a href="mailto:info@vermaxconsultants.com"><i class="bi bi-envelope flex-shrink-0"></i></a>
               <div>
                 <h3 class=" animated swing">Email Us</h3>
                 <p>info@vermaxconsultants.com</p>
@@ -468,35 +468,51 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
+            <form method="post" id="contact-form">
+              <div class="row g-3"> <!-- Bootstrap spacing -->
+                
+                <!-- Name Input -->
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            
+                <!-- Email Input -->
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required>
                 </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            
+                <!-- Subject Input -->
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject" required>
                 </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            
+                <!-- Message Input -->
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" class="form-control" rows="5" placeholder="Type your message here..." required></textarea>
                 </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button class="animated bounce" type="submit">Send Message</button>
+            
+                <!-- Status Messages -->
+                <!-- <div class="col-12 text-center">
+                  <div id="loading" class="alert alert-info d-none">Loading...</div>
+                  <div id="success-message" class="alert alert-success d-none">Your message has been sent. Thank you!</div>
+                  <div id="error-message" class="alert alert-danger d-none">Failed to send. Please try again.</div>
+                </div> -->
+            
+                <!-- Submit Button -->
+                <div class="col-12 text-center">
+                  <button type="submit" id="submit-btn" class="btn btn-custom">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                  </button>
                 </div>
-
+            
               </div>
             </form>
+            
+
           </div><!-- End Contact Form -->
 
         </div>
@@ -580,11 +596,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Vermax Consultations Limited</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        
       </div>
     </div>
 
@@ -595,16 +607,21 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
-
+  <!--swiper.js-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!--Email.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/service-pop-up.js"></script>
   <script src="assets/js/animation-observor.js"></script>
+  <script src="assets/js/contact.js"></script>
   
   
 

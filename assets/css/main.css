@@ -48,6 +48,16 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
+@media screen and (min-width:991px){
+body{
+  font-size:1.1em;
+}
+}
+@media screen and (min-width:1300px){
+  body{
+    font-size:1.4em;
+  }
+  }
 
 a {
   color: var(--accent-color);
@@ -898,14 +908,17 @@ section,
 /* Hero Section */
 .hero {
   width: 100%;
-  min-height: calc(100vh - 112px); /* Your intended height */
-  padding: 80px 0;
+  /* min-height: calc(100vh - 112px);  */
+  min-height: 100vh; /* Full viewport height */
+  padding-top: 112px; /* Ensures content never goes under navbar */
+  /* padding: 80px 0; */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
 }
+
 
 /* Swiper container */
 .swiper3 {
@@ -1110,7 +1123,8 @@ section,
 @media (max-width: 334px) {
   .hero {
     padding: 10px 0; /* Reduce padding further */
-    min-height: 70vh; /* Shorter height for tiny screens */
+    min-height: 100vh; /* Shorter height for tiny screens */
+   
   }
 
   .swiper3 .container {
@@ -1159,6 +1173,9 @@ section,
   .swiper3 .swiper-button-next:after,
   .swiper3 .swiper-button-prev:after {
     font-size: 14px; /* Smaller arrow icon */
+  }
+  .bi-phone span{
+    display:none;
   }
 }
 
@@ -1259,10 +1276,11 @@ section,
 .services .service-item {
   background-color: var(--surface-color);
   text-align: center;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   height: 100%;
+  outline: none;
 }
 
 .services .service-item .icon {
@@ -1838,46 +1856,61 @@ section,
   margin-bottom: 0;
   font-size: 14px;
 }
-
-.contact .php-email-form {
-  height: 100%;
+/* Apply background colors from root */
+#contact-form {
+  background: var(--surface-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
+/* Form Inputs */
+.form-control {
+  background: var(--background-color);
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border: 1px solid var(--accent-color);
+  transition: 0.3s;
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+.form-control:focus {
+  border-color: var(--heading-color);
+  box-shadow: 0px 0px 8px rgba(54, 79, 107, 0.4);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+/* Labels */
+.form-label {
+  color: var(--heading-color);
+  font-weight: 600;
 }
 
-.contact .php-email-form button[type=submit] {
+/* Button Styling */
+.btn-custom {
+  background: var(--nav-color); /* Your Slate Blue */
   color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 36px;
-  transition: 0.4s;
-  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+  border: none;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+.btn-custom:hover {
+  background: var(--nav-hover-color);
+  color: var(--nav-dropdown-color);
+}
+
+/* Status Messages */
+.alert {
+  font-size: 0.9rem;
+  padding: 10px; 
+  border-radius: 6px;
+}
+
+/* Hide alerts by default */
+.d-none {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -2013,13 +2046,25 @@ section,
   height: 400px;
   position:relative;
 }
+@media screen and (min-width:1200px){
+  .swiper2 .swiper-slide {
+    width: 100px;
+    height: 600px;
+  }
+}
+@media screen and (max-width:1200px){
+  .swiper2 .swiper-slide {
+    width: 100px;
+    height: 600px;
+  }
+}
 /* Style the glightbox container */
 .swiper2 .swiper-slide .glightbox {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 40%; /* Takes up 40% of swiper-slide height */
+  height: 50%; /* Takes up 40% of swiper-slide height */
   display: block;
   z-index: 2; /* Above service-item if needed */
 }
