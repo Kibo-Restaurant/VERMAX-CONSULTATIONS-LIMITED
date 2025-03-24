@@ -985,6 +985,8 @@ section,
   font-size: 48px;
   font-weight: 700;
   color: var(--heading-color);
+  font-weight: 900; /* Bolder */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Soft black shadow */
 }
 
 .hero .welcome p {
