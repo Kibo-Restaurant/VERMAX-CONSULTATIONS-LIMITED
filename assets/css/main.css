@@ -984,7 +984,7 @@ section,
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: var(--heading-color);
+  color: #0d4767;
   font-weight: 900; /* Bolder */
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Soft black shadow */
 }
